@@ -1,8 +1,8 @@
-#SocialHub
+# SocialHub
 
 SocialHub is a decentralized social media web application built on Arweave, designed to connect users and foster interactions through shared posts and community engagement.
 
-##Key Features:
+## Key Features:
   - Post Creation and Sharing: Users can create posts and share them with the global SocialHub community.
   - Explore and Discover: Discover other users and explore their posts, fostering new connections and interactions.
   - Follow Functionality: Stay updated with posts from followed users, enhancing the social experience within the platform.
