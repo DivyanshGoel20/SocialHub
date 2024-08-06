@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import { useConnection } from "@arweave-wallet-kit/react";
 import { dryrun } from "@permaweb/aoconnect";
 import { Outlet } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const View = () => {
   const { connected } = useConnection();
@@ -53,11 +54,11 @@ const View = () => {
         {postList.length > 0 ? (
           postList.map((post, index) => (
             <div key={index} style={styles.postDiv}>
-              <a href={`/view/${post.ID}`} style={styles.postLink}>
+              <Link to={`/view/${post.ID}`} style={styles.postLink}>
                 <h3 style={styles.postHeading}>{post.Title}</h3>
                 <p style={styles.postContent}>Author: {post.Author}</p>
                 <p style={styles.postContent}>Post ID: {post.ID}</p>
-              </a>
+              </Link>
             </div>
           ))
         ) : (
